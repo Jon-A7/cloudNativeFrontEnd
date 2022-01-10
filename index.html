@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Playlist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <body>
+      
+        <div class="container col-lg-10 col-md-8 col-sm-8 col-xs-1" id="mainSection"> 
+          <div class="row">
+            <div class="col">
+              <form id="playlistForm">
+                <div class="form-group">
+                  <label for="song">Song</label>
+                  <input type="text" class="form-control" id="newSong" aria-describedby="emailHelp" placeholder="Song">
+                </div>
+                <div class="form-group">
+                    <label for="album">Album</label>
+                    <input type="text" class="form-control" id="album" aria-describedby="emailHelp" placeholder="Album">
+                  </div>
+                  <div class="form-group">
+                    <label for="artist">Artist</label>
+                    <input type="text" class="form-control" id="artist" aria-describedby="emailHelp" placeholder="Artist">
+                  </div>
+                <button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
+              </form>
+            </div>
+          </div>
+
+              <!-- <form class="form-inline" id="deleteForm">
+                <div class="form-group">
+                  <label for="inputPassword2" class="sr-only">Delete</label>
+                  <input type="text" class="form-control" name="songId" id="songId">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Delete</button>
+              </form> style="width: 18rem;"  <img class="card-img-top" id="albumImg" src="./images/placeholder-rgb-color-icon-vector-32173552.jpg" alt="Album Cover">-->
+
+        <section >
+          <div class="card-deck" id="newPlaylist">
+            <div class="card" >
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Song</li>
+                <li class="list-group-item">Album</li>
+                <li class="list-group-item">Artist</li>
+              </ul>
+              <div class="card-body">
+                <button type="submit" class="btn btn-primary" id="update">Update</button>
+                <button type="submit" class="btn btn-primary" id="delete">Delete</button>
+              </div>
+            </div>
+          </div>
+        </section>  
+        
+          </div>
+        
+        <script src="./app.js" async defer></script>
+    </body>
+</html>
